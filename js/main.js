@@ -60,3 +60,15 @@ function minPositive() {
     document.getElementById("result4").innerHTML = "Số nhỏ nhất trong mảng là: " + min;
 }
 document.querySelector("#calc4").onclick = minPositive;
+
+// CÂU 5
+function lastPositive() {
+    var last = 0;
+    for (var i = 0; i < numArr.length; i++) {
+        if (numArr[i] > 0 && numArr[i] % 2 == 0  ) {
+            last = numArr[i];
+        }
+    }
+    document.getElementById("result5").innerHTML = "Số nhỏ nhất trong mảng là: " + last;
+}
+document.querySelector("#calc5").onclick = lastPositive;
